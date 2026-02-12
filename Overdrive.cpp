@@ -18,14 +18,9 @@ SNDFILE* open_wav(const char* filename, SF_INFO* sfinfo){
 }
 
 void tube_screamer(const float* input_buffer, float* output_buffer, float drive, float tone, float level, int num_samples){
-    // Convert parameters to usable values
-    // The gain determines the distortion of the signal, I'm still testing the values based on the real TS808
     float gain_val = 12.0f + ((118.0f - 12.0f) * (drive / 10.0f));
-    // The tone determines the range of frequencies in the LPF
     float alpha = tone / 10.0f;
-    // The level determines the output volume
     float volume = 0.5f + ((2.5f - 0.5f) * (level / 10.0f));
-    
     float prev_filtered = 0;
     float sample = 0;
     for (int n = 0; n < num_samples; ++n){

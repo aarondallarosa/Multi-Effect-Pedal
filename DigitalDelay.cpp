@@ -15,7 +15,7 @@ SNDFILE* open_wav(const char* filename, SF_INFO* sfinfo){
     }
     return infile;
 }
-//dandndjasnnsjdn
+
 void carbon_copy(const float* input_buffer, float* output_buffer, float regen, float delay, float mix, bool warm, int num_samples){
     // Determine the real values for paramters
     float regen_val = regen / 10.0f * 0.95f;
