@@ -39,7 +39,7 @@ Currently, the repository includes basic algorithms for testing purposes.
 
 The `Audio Demos` folder contains example outputs for each effect:
 
-- Both unprocessed (dry) and modified (wet) audio signals are included for easy comparison.
+- Both unprocessed (..._Input) and modified (..._Output) audio signals are included for easy comparison.
 
 ---
 
