@@ -18,8 +18,12 @@ SNDFILE* open_wav(const char* filename, SF_INFO* sfinfo){
 }
 
 void tube_screamer(const float* input_buffer, float* output_buffer, float drive, float tone, float level, int num_samples){
+    // Convwet parameters (0-10) to usable values
+    // Gain from 12-118 Im still fine tuning this effect to minimize the digital sound
     float gain_val = 12.0f + ((118.0f - 12.0f) * (drive / 10.0f));
+    // Determines LPF frequencies
     float alpha = tone / 10.0f;
+    // (1/2) - 2 Times the volume
     float volume = 0.5f + ((2.5f - 0.5f) * (level / 10.0f));
     float prev_filtered = 0;
     float sample = 0;
