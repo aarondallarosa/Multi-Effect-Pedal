@@ -15,7 +15,7 @@ There are `.mp4` files located in the "Audio Demos" folder which are audio examp
 - [Introduction](#introduction)
 - [Effects](#effects)
 - [Audio Demos](#audio-demos)
-  - [Waveform Analysis](#wave-form-analysis)
+  - [Waveform Analysis](#waveform-analysis)
 - [Sources](#sources)
 
 ---
@@ -53,8 +53,8 @@ The `Audio Demos` folder contains example outputs for each effect:
 _Relevant sources, references, and inspirations will be listed here:_
 
 - [Tube Screamer Analysis - Electrosmash](https://www.electrosmash.com/tube-screamer-analysis)
-
-(Feel free to recommend any resources you think would be helpful!)
+- [The Tremolo Project - Blogspot](https://tremolo-project.blogspot.com/2017/08/boss-tr-2.html)
+- (Feel free to recommend any resources you think would be helpful!)
 
 ---
 
