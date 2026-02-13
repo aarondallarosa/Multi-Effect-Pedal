@@ -42,8 +42,16 @@ Currently, the repository includes 3 digital audio effects based on real analog 
 
 The `Audio Demos` folder contains example outputs for each effect:
 
-- Both unprocessed (`<Effect_Name>_Input`) and modified (`<Effect_Name>_Output`) audio signals are included for easy comparison.
-- [Listen to the demo](Audio_Demos/Delay_Output.mp3)
+- [Delay Input](Audio_Demos/Delay_Intput.mp3)
+- [Delay Output](Audio_Demos/Delay_Output.mp3)
+  
+-  [Overdrive Output](Audio_Demos/Overdrive_Output.mp3)
+-  [Overdrive Intput](Audio_Demos/Overdrive_Input.mp3)
+
+-  [Tremolo Input](Audio_Demos/Overdrive_Input.mp3)
+-  [Squared Tremolo Output](Audio_Demos/Overdrive_Square_Ouput.mp3)
+-  [Triangular Tremolo Input](Audio_Demos/Overdrive_Triangle_Output.mp3)
+
 
 ---
 
