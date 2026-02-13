@@ -1,38 +1,39 @@
-# DSP Algorithms Playground
-
 **This repository is a work in progress.**  
 Please be patient as I continue to develop and update this project!
+I apologize for this being incomplete, everything will be updated and properly structured as the project evolves.
 
-The `.cpp` files here are currently intended for testing DSP (Digital Signal Processing) algorithms, and may not reflect the most recent work.  
-The `.wav` files are audio examples demonstrating the effects—both dry and processed signals for comparison.
+The `.cpp` files here are currently intended for testing DSP algorithms, and are not updated for my current real-time code.  
+The `.wav` files are audio examples demonstrating the effects.
 
-I apologize for any unprofessional filenames or organization—everything will be updated and properly structured as the project evolves.
 
 **Thank you for visiting this repository!**
 
 ---
 
 ## Table of Contents
-
 - [Introduction](#introduction)
 - [Effects](#effects)
 - [Audio Demos](#audio-demos)
+  - [Waveform Analysis](#wave-form-analysis)
 - [Sources](#sources)
 
 ---
 
 ## Introduction
 
-**To ensure professional-grade audio performance and system stability, my multi-effects pedal project incorporates the JACK Audio Connection Kit for real-time, low-latency signal routing within the embedded Linux environment. I have engineered robust I/O handling, including high-resolution ADC/DAC integration and scalable hardware interfaces, to support a variety of input and output configurations. System performance is rigorously profiled and benchmarked, with continuous measurement of DSP latency, audio throughput, and processor utilization using custom analysis tools and industry-standard profilers. Advanced waveform analysis and debugging techniques—both software-based and via oscilloscopes—are employed to validate signal integrity, refine DSP algorithms, and troubleshoot anomalies at every stage of the signal path. This engineering-driven approach ensures reliable, high-fidelity audio processing optimized for the demands of live performance and creative experimentation.**
+
+
 ---
 
 ## Effects
 
-*A list of the effects will be added as the project develops.*  
+_This list of the effects will grow as the project develops._
+
 Currently, the repository includes 3 digital audio effects based on real analog pedals:
-Overdrive (Ibanez TubeScreamer 808)
-Delay (MXR Carbon Copy)
-Tremolo (Boss TR2)
+
+- **Overdrive (Ibanez TubeScreamer 808)**
+- **Delay (MXR Carbon Copy)**
+- **Tremolo (Boss TR2)**
 
 ---
 
@@ -40,15 +41,20 @@ Tremolo (Boss TR2)
 
 The `Audio Demos` folder contains example outputs for each effect:
 
-- Both unprocessed (<Effect_Name>_Input) and modified (<Effect_Name>_Output) audio signals are included for easy comparison.
+- Both unprocessed (`<Effect_Name>_Input`) and modified (`<Effect_Name>_Output`) audio signals are included for easy comparison.
 
 ---
 
+### Waveform Analysis
+
 ## Sources
 
-*Relevant sources, references, and inspirations will be listed here.*  
+_Relevant sources, references, and inspirations will be listed here:_
+
+- [Tube Screamer Analysis - Electrosmash](https://www.electrosmash.com/tube-screamer-analysis)
+
 (Feel free to recommend any resources you think would be helpful!)
 
 ---
 
-> *Stay tuned for more updates, improvements, and cleaner code!*
+> _Stay tuned for more updates, improvements, and cleaner code!_
