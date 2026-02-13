@@ -16,12 +16,16 @@ SNDFILE* open_wav(const char* filename, SF_INFO* sfinfo){
     return infile;
 }
 
+
 void carbon_copy(const float* input_buffer, float* output_buffer, float regen, float delay, float mix, bool warm, int num_samples){
     // Determine the real values for paramters
     float regen_val = regen / 10.0f * 0.95f;
-    float delay_val = 20.0f + ((900.0f - 20.0f) * (delay / 10.0f)); 
+    // 20ms to 900ms delay. The real pedal goes to 1200 but that is extreme
+    float delay_val = 20.0f + ((900.0f - 20.0f) * (delay / 10.0f));
+    // Determines the ratio of the dry to delayed signal
     float mix_val = mix / 10.0f;
     int D = static_cast<int>((delay_val / 1000.0f) * 44100.0f);
+    // Alpha for the LPF. When warm is toggled the cut off frequencies are lower
     float alpha;
     if (warm == true){
         alpha = 0.16f;
@@ -124,4 +128,5 @@ sf_close(outfile);
     delete[] input_buffer;
     delete[] output_buffer;
     return 0;
+
     }
