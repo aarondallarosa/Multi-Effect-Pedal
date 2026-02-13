@@ -22,7 +22,7 @@ There are `.mp4` files located in the "Audio Demos" folder which are audio examp
 
 ## Introduction
 
-
+Currently, I am engineering a professional-grade multi-effects pedal utilizing the Raspberry Pi platform and embedded C++. The project features various real-time DSP algorithms, modular effects architecture, and a low-latency audio pipeline within an embedded Linux environment, utilizing JACK and ALSA for advanced audio routing and I/O management. Key technical highlights include ARM-based optimization, high-quality hardware integration (ADC/DAC), efficient C++ DSP implementation, performance optimization, and waveform analysis to ensure signal integrity and reliability. This project is continually expanding my skills in embedded systems, DSP, and electrical/computer engineering; furthering both my professional development and fueling my creative expression as a musician.
 
 ---
 
