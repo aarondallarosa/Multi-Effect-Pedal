@@ -9,13 +9,18 @@ Thank you for clicking on this link.
 ## Table of Contents
 [Introduction](#introduction)
 
-[Assignment](#assignment)
-
-[Using Iterators](#using-iterators)
-
-[Run Tests](#run-tests)
+[Effects](#effects)
 
 [Sources](#sources)
 
 ## Introduction
+
+
+
+## Effects
+
+
+
+
+## Sources
 
