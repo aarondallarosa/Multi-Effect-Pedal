@@ -23,9 +23,7 @@ I apologize for any unprofessional filenames or organization—everything will b
 
 ## Introduction
 
-This repository is dedicated to experimenting with DSP algorithms for audio processing.  
-Right now, the code and examples are mostly for testing purposes, but over time, I plan to turn this into a well-organized library of effects and demos.
-
+To ensure professional-grade audio performance and system stability, my multi-effects pedal project incorporates the JACK Audio Connection Kit for real-time, low-latency signal routing within the embedded Linux environment. I have engineered robust I/O handling, including high-resolution ADC/DAC integration and scalable hardware interfaces, to support a variety of input and output configurations. System performance is rigorously profiled and benchmarked, with continuous measurement of DSP latency, audio throughput, and processor utilization using custom analysis tools and industry-standard profilers. Advanced waveform analysis and debugging techniques—both software-based and via oscilloscopes—are employed to validate signal integrity, refine DSP algorithms, and troubleshoot anomalies at every stage of the signal path. This engineering-driven approach ensures reliable, high-fidelity audio processing optimized for the demands of live performance and creative experimentation.
 ---
 
 ## Effects
