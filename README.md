@@ -33,11 +33,11 @@ _This list of the effects will grow as the project develops._
 Currently, the repository includes 3 digital audio effects based on real analog pedals:
 
 - **Overdrive (Ibanez TubeScreamer 808)**
-  -- [Code](Overdrive.cpp)
+  - [Code](Overdrive.cpp)
 - **Delay (MXR Carbon Copy)**
-  -- [Code](DigitalDelay.cpp)
+  - [Code](DigitalDelay.cpp)
 - **Tremolo (Boss TR2)**
-  -- [Code](Tremolo.cpp)
+  - [Code](Tremolo.cpp)
 
 ---
 
