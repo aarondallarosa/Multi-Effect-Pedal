@@ -43,6 +43,7 @@ Currently, the repository includes 3 digital audio effects based on real analog 
 The `Audio Demos` folder contains example outputs for each effect:
 
 - Both unprocessed (`<Effect_Name>_Input`) and modified (`<Effect_Name>_Output`) audio signals are included for easy comparison.
+- [Listen to the demo](Audio_Demos/Delay_Output.mp3)
 
 ---
 
