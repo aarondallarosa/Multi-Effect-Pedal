@@ -32,10 +32,12 @@ _This list of the effects will grow as the project develops._
 
 Currently, the repository includes 3 digital audio effects based on real analog pedals:
 
-- **Overdrive (Ibanez TubeScreamer 808)**
-  - [Code](Overdrive.cpp)
 - **Delay (MXR Carbon Copy)**
   - [Code](DigitalDelay.cpp)
+    
+- **Overdrive (Ibanez TubeScreamer 808)**
+  - [Code](Overdrive.cpp)
+
 - **Tremolo (Boss TR2)**
   - [Code](Tremolo.cpp)
 
@@ -59,6 +61,19 @@ The `Audio Demos` folder contains example outputs for each effect:
 ---
 
 ## Waveform Analysis
+
+**Delay**
+![Image](Waveforms/Delay_Waveform.png)
+ Delay effect waveforms. The top waveform shows the dry input, while the bottom waveform illustrates the output mixed with echoes from delayed repetitions of the signal. It is kind of hard to see this within a waveform but when the delayed signal is added to the current signal it causes slight noise cancelation hence the decrease in amplitude. 
+
+**Overdrive**
+![Image](Waveforms/Overdrive_Waveform.png)
+Overdrive effect waveforms. The top trace is the clean input, and the bottom trace is the driven output. The overdrive alters the waveform’s shape, adding harmonic content and increasing amplitude for a saturated sound.
+
+
+**Tremolo**
+![Image](Waveforms/Tremolo_Waveforms.png)
+Tremolo effect waveforms. The top signal is the input (dry), and the bottom signals show the output modulated by square and triangle LFO's.
 
 ## Sources
 
