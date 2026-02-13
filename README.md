@@ -3,7 +3,8 @@ Please be patient as I continue to develop and update this project!
 I apologize for this being incomplete, everything will be updated and properly structured as the project evolves.
 
 The `.cpp` files here are currently intended for testing DSP algorithms, and are not updated for my current real-time code.  
-The `.wav` files are audio examples demonstrating the effects.
+There are `.mp4` files located in the "Audio Demos" folder which are audio examples demonstrating the effects.
+
 
 
 **Thank you for visiting this repository!**
