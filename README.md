@@ -31,7 +31,10 @@ Right now, the code and examples are mostly for testing purposes, but over time,
 ## Effects
 
 *A list of the effects will be added as the project develops.*  
-Currently, the repository includes basic algorithms for testing purposes.
+Currently, the repository includes 3 digital audio effects based on real analog pedals:
+Overdrive (Ibanez TubeScreamer 808)
+Delay (MXR Carbon Copy)
+Tremolo (Boss TR2)
 
 ---
 
