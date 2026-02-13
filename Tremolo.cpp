@@ -18,10 +18,14 @@ SNDFILE* open_wav(const char* filename, SF_INFO* sfinfo){
 
 void TR2(const float* input_buffer, float* output_buffer, float rate, float depth, float wave, int num_samples){
     // Determine the real values for paramters
+    // Determines the frequency of the modulator 1-13Hz
     float rate_val = 1.0f + ((13.0f - 1.0f) * (rate / 10.0f)); 
+    // Determines the intensity of the volume changes
     float depth_val = depth / 10.0f;
     float wave_val = wave / 10.0f;
+    // This is the current position of the LFo
     float phase = 0.0f;
+    // The LFO is the Low Frequency Modulator that modulates the signal
     float LFO, square, triangle;
     float phase_inc = rate_val / 44100.0f;
     // Loop through and modify signal
@@ -35,8 +39,11 @@ void TR2(const float* input_buffer, float* output_buffer, float rate, float dept
             triangle = 2.0f * phase;
             square = 1.0f;
         }
+        // Determine how square or triangular the LFO is
         LFO = (1 - wave_val) * triangle + wave_val * square;
+        // Apply the LFo to the dry signal while considering the depth of it
         output_buffer[n] = input_buffer[n] * ((1.0f - depth_val) + (depth_val * LFO));
+        // Update the postion of the LFO
         phase += phase_inc;
         if (phase >= 1){
             phase -= 1;
