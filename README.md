@@ -5,3 +5,17 @@ The .wav files are audio examples of the DSP algorithims, with the dry and modif
 
 I apologize for the unprofessional names when I have time I will update this repo and organize everything accordingly.
 Thank you for clicking on this link.
+
+## Table of Contents
+[Introduction](#introduction)
+
+[Assignment](#assignment)
+
+[Using Iterators](#using-iterators)
+
+[Run Tests](#run-tests)
+
+[Sources](#sources)
+
+## Introduction
+
