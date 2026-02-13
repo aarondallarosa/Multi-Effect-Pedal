@@ -15,7 +15,7 @@ There are `.mp4` files located in the "Audio Demos" folder which are audio examp
 - [Introduction](#introduction)
 - [Effects](#effects)
 - [Audio Demos](#audio-demos)
-  - [Waveform Analysis](#waveform-analysis)
+- [Waveform Analysis](#waveform-analysis)
 - [Sources](#sources)
 
 ---
@@ -58,7 +58,7 @@ The `Audio Demos` folder contains example outputs for each effect:
 
 ---
 
-### Waveform Analysis
+## Waveform Analysis
 
 ## Sources
 
