@@ -81,8 +81,8 @@ _Relevant sources, references, and inspirations will be listed here:_
 
 - [Tube Screamer Analysis - Electrosmash](https://www.electrosmash.com/tube-screamer-analysis)
 - [The Tremolo Project - Blogspot](https://tremolo-project.blogspot.com/2017/08/boss-tr-2.html)
-- (Feel free to recommend any resources you think would be helpful!)
+
 
 ---
 
-> _Stay tuned for more updates, improvements, and cleaner code!_
+Stay Tuned for more updates!
