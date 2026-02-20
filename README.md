@@ -68,7 +68,7 @@ The `Audio Demos` folder contains example outputs for each effect:
 
 **Overdrive**
 ![Image](Waveforms/Overdrive_Waveform.png)
-Overdrive effect waveforms. The top trace is the clean input, and the bottom trace is the driven output. The overdrive alters the waveform’s shape, adding harmonic content and increasing amplitude for a saturated sound.
+Overdrive effect waveforms. The top waveform is the driven output, and the bottom is the clean intput. The overdrive alters the waveform’s shape, adding harmonic content and increasing amplitude for a saturated sound.
 
 
 **Tremolo**
