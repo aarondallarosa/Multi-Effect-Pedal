@@ -64,16 +64,16 @@ The `Audio Demos` folder contains example outputs for each effect:
 
 **Delay**
 ![Image](Waveforms/Delay_Waveform.png)
- Delay effect waveforms. The top waveform shows the dry input, while the bottom waveform illustrates the output mixed with echoes from delayed repetitions of the signal. It is kind of hard to see this within a waveform but when the delayed signal is added to the current signal it causes slight noise cancelation hence the decrease in amplitude. 
+The top waveform shows the dry input, while the bottom waveform illustrates the output mixed with echoes from delayed repetitions of the signal. It is kind of hard to see this within a waveform but when the delayed signal is added to the current signal it causes slight noise cancelation hence the decrease in amplitude. 
 
 **Overdrive**
 ![Image](Waveforms/Overdrive_Waveform.png)
-Overdrive effect waveforms. The top waveform is the driven output, and the bottom is the clean intput. The overdrive alters the waveform’s shape, adding harmonic content and increasing amplitude for a saturated sound.
+The top waveform is the driven output, and the bottom is the clean intput. The overdrive alters the waveform’s shape, adding harmonic content and increasing amplitude for a saturated sound.
 
 
 **Tremolo**
 ![Image](Waveforms/Tremolo_Waveforms.png)
-Tremolo effect waveforms. The top signal is the input (dry), and the bottom signals show the output modulated by square and triangle LFO's.
+The top signal is the input (dry), and the bottom signals show the output modulated by square and triangle LFO's.
 
 ## Sources
 
