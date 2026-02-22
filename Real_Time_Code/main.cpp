@@ -11,7 +11,7 @@ static jack_client_t *client = nullptr;
 
 static volatile sig_atomic_t keep_running = 1;
 
-// Effect choice and parameters (populated from main)
+// Effect choice and parameters
 static int g_effect_choice = 4;
 static float g_drive = 5.0f, g_tone = 5.0f, g_level = 5.0f;
 static float g_rate = 5.0f, g_depth = 5.0f, g_wave = 5.0f;
@@ -65,7 +65,9 @@ int process(jack_nframes_t nframes, void *arg) {
 int main() {
     const char *client_name = "Aaron";
     jack_status_t status;
-
+    
+    // Determine which effect will be used and the parameters
+    // This will change a lot when I implement a GUI with "knobs" and the ability to select which pedal and turn on/off
     std::cout << "Available effects:" << std::endl;
     std::cout << "1. Tube Screamer (Overdrive)" << std::endl;
     std::cout << "2. TR2 (Tremolo)" << std::endl;
