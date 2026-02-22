@@ -67,11 +67,11 @@ The `Audio Demos` folder contains example outputs for each effect:
 
 **Delay**
 ![Image](Waveforms/Delay_Waveform.png)
-The top waveform shows the dry input, while the bottom waveform illustrates the output mixed with echoes from delayed repetitions of the signal. It is kind of hard to see this within a waveform but when the delayed signal is added to the current signal it causes slight noise cancelation hence the decrease in amplitude. 
+The top waveform shows the dry input, while the bottom waveform illustrates the output mixed with echoes from the delayed portion of the signal. It is kind of hard to see this within a waveform but when the delayed signal is added to the current signal it causes slight noise cancelation hence the decrease in amplitude. 
 
 **Overdrive**
 ![Image](Waveforms/Overdrive_Waveform.png)
-The top waveform is the driven output, and the bottom is the clean intput. The overdrive alters the waveform’s shape, adding harmonic content and increasing amplitude for a saturated sound.
+The top waveform is the driven output, and the bottom is the clean intput. The overdrive alters the waveform’s shape, adding harmonics and increasing amplitude.
 
 
 **Tremolo**
