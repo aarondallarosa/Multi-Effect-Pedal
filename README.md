@@ -3,7 +3,7 @@ Please be patient as I continue to develop and update this project!
 I apologize for this being incomplete, everything will be updated and properly structured as the project evolves.
 
 I have uploaded some `.cpp` files which were used to test the effects with .wav files as well as the real-time code that I am currently wokring on.  
-There are `.mp4` files located in the "Audio Demos" folder which are audio examples demonstrating the effects.
+There are `.mp4` files located in the "Audio Demos" folder which are audio examples demonstrating the effects. The volume is very inconsistent between the files, so test the volume prior to listening. Also, headphones are recommended.
 
 
 
