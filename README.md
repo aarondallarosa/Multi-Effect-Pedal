@@ -34,13 +34,13 @@ Currently, the repository includes 3 digital audio effects based on real analog 
 
 
 - **Delay (MXR Carbon Copy)**
-  - [.wav Version](DigitalDelay.cpp)
+  - [.wav Version](Effects/DigitalDelay.cpp)
     
 - **Overdrive (Ibanez TubeScreamer 808)**
-  - [.wav Version](Overdrive.cpp)
+  - [.wav Version](Effects/Overdrive.cpp)
 
 - **Tremolo (Boss TR2)**
-  - [.wav Version](Tremolo.cpp)
+  - [.wav Version](Effects/Tremolo.cpp)
 
 - **Real-Time Effects**
   - [Current Version](Real_Time_Code/effects.cpp)
