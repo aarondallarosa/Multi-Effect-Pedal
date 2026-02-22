@@ -2,7 +2,7 @@
 Please be patient as I continue to develop and update this project!
 I apologize for this being incomplete, everything will be updated and properly structured as the project evolves.
 
-The `.cpp` files here are currently intended for testing DSP algorithms, and are not updated for my current real-time code.  
+I have uploaded some `.cpp` files which were used to test the effects with .wav files as well as the real-time code that I am currently wokring on.  
 There are `.mp4` files located in the "Audio Demos" folder which are audio examples demonstrating the effects.
 
 
@@ -32,15 +32,18 @@ _This list of the effects will grow as the project develops._
 
 Currently, the repository includes 3 digital audio effects based on real analog pedals:
 
+
 - **Delay (MXR Carbon Copy)**
-  - [Code](DigitalDelay.cpp)
+  - [.wav Version](DigitalDelay.cpp)
     
 - **Overdrive (Ibanez TubeScreamer 808)**
-  - [Code](Overdrive.cpp)
+  - [.wav Version](Overdrive.cpp)
 
 - **Tremolo (Boss TR2)**
-  - [Code](Tremolo.cpp)
+  - [.wav Version](Tremolo.cpp)
 
+- **Real-Time Effects**
+  - [Current Version](Real_Time_Code/effects.cpp)
 ---
 
 ## Audio Demos
