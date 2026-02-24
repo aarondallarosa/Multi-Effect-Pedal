@@ -48,7 +48,7 @@ void tube_screamer(const float* input_buffer, float* output_buffer,
 void TR2(const float* input_buffer, float* output_buffer, 
          float rate, float depth, float wave, int num_samples){
     // Determine the real values for paramters
-    // Determines the frequency of the modulator 1-13Hz
+    // Determines the frequency of the LFO 1-13Hz
     float rate_val = 1.0f + ((13.0f - 1.0f) * (rate / 10.0f)); 
     // Determines the intensity of the volume changes
     float depth_val = depth / 10.0f;
