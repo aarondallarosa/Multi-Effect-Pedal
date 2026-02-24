@@ -8,7 +8,7 @@ Open jack:
 jackd
 
 Compile/Run:
-g++ -std=c++11 Run_Program.cpp effects.cpp -o Program  -ljack
+g++ -std=c++11 main.cpp effects.cpp -o main -ljack
 ./main
 
 Connect ports:
