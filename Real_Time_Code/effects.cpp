@@ -34,22 +34,23 @@ void tube_screamer(const float* input_buffer, float* output_buffer,
     // (.5 - 2) Times the volume
     float volume = 0.5f + ((2.5f - 0.5f) * (level / 10.0f));
     // LPF[n - 1]
-    float prev_filtered = 0;
+    float lpf = 0.0f;
     // x[n]
-    float sample = 0;
+    float sample = 0.0f;
 
     // Loop through and apply DSP algorithm
     for (int n = 0; n < num_samples; ++n){
         // Apply simple gain stage and clipping
         sample = gain_val * input_buffer[n];
+        // Unsure if this is the best way to clip
         // It just looks like I am amplifying/attenuating rather than clipping
-        
+        // I found this formula: y[n] = (2/pi) * arctan(c + x[n]) where c = [1-9]
+        // This might give me odd harmonics
         sample = tanh(sample / 0.5f) * 0.5f;
         // Apply LPF filter
         //  LPF[n] = α * d[n] + (1 - α) * LPF[n - 1] 
         // I think this might be messed up I could just code in an actual buffer array but Im not 100% sure I am updating LPF[n-1] correctly
-        float filtered = alpha * sample + (1.0f - alpha) * prev_filtered;
-        prev_filtered = filtered;
+        float lpf = alpha * sample + (1.0f - alpha) * lpf;
         // Change volume
         output_buffer[n] = volume * filtered;
     }
@@ -159,7 +160,7 @@ void carbon_copy(const float* input_buffer, float* output_buffer,
 
         // Apply LPF
         //  LPF[n] = α * d[n] + (1 - α) * LPF[n - 1] 
-        lpf = alpha * delayed + (1 - alpha) * lpf;
+        lpf = alpha * delayed + (1.0f - alpha) * lpf;
 
         // Update the feedback and iterate index 
         // F[n] = x[n] + R * LPF[n]
