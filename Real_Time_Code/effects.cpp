@@ -107,10 +107,13 @@ void TR2(const float* input_buffer, float* output_buffer,
 // Digital Delay effect
 void carbon_copy(const float* input_buffer, float* output_buffer, 
                  float regen, float delay, float mix, bool warm, int num_samples){
-    // Use static buffers to persist across calls
+    // Feedback buffer array
     static float* feedback_buffer = nullptr;
+    // This is used to check if the buffer is empty
     static int buffer_size = 0;
+    // Used to ensure we are looking at the sample at the specific delay time
     static int index = 0;
+    // Value of LFP[n]
     static float lpf = 0.0f;
     
     // Determine the real values for parameters
@@ -122,6 +125,7 @@ void carbon_copy(const float* input_buffer, float* output_buffer,
     float mix_val = mix / 10.0f;
     // Determine number of delayed samples
     const float sample_rate = 48000.0f;
+    // Determine the amount of samples for the delay
     int D = static_cast<int>((delay_val / 1000.0f) * sample_rate);
     // Determines the frequency of LPF with the smoothing factor alpha
     float alpha;
@@ -165,8 +169,9 @@ void carbon_copy(const float* input_buffer, float* output_buffer,
         // Update the feedback and iterate index 
         // F[n] = x[n] + R * LPF[n]
         feedback_buffer[index] = dry + (regen_val * lpf);
-        // I
+        // Increment index as we go to the next sample to keep F[n - D]
         index++;
+        // Ensure we reset the index if it exceeds D samples
         if (index >= D){
             index = 0;
         }
