@@ -67,16 +67,18 @@ The `Audio Demos` folder contains example outputs for each effect:
 
 **Delay**
 ![Image](Waveforms/Delay_Waveform.png)
-The top waveform shows the dry input, while the bottom waveform illustrates the output mixed with echoes from the delayed portion of the signal. It is kind of hard to see this within a waveform but when the delayed signal is added to the current signal it causes slight noise cancelation hence the decrease in amplitude. 
+The top waveform shows the dry input, while the bottom waveform illustrates the output mixed with echoes from the delayed portion of the signal. It is kind of hard to see this within a waveform but when the delayed signal is added to the current signal it causes slight noise cancelation hence the decrease in amplitude. This effect uses an impulse response algorithm to add the previous notes to to signal. To mimic an analog delay there is a LPF filter applied to the delayed signal. Excluding the first iteration, the delayed signal is kept "alive" with the regen variable, this causes the specific delay to stay in the signal and fade away. The dry and delayed signal and then summed together to have the input overlapped with the delay.
 
 **Overdrive**
 ![Image](Waveforms/Overdrive_Waveform.png)
-The top waveform is the driven output, and the bottom is the clean intput. The overdrive alters the waveform’s shape, adding harmonics and increasing amplitude.
+The top waveform is the driven output, and the bottom is the clean intput. The overdrive alters the waveform’s shape, adding harmonics and increasing amplitude. This effect puts the signal through a gain-stage and then
+applies a non-linear clipping using the hyperbolic tangent function. (tanh) This clipping mimics tube amp drive circuits which creates odd harmonics. (3rd, 5th 7th) These odd harmonics correspond to a dominant 7th chord,
+(I, III, V, _b_VII, which in music theory relate to a blues sounding tone warm (low-mid frequencies 200-500hz) tone. Lastly the signal is ran through a LPF which is controlled by the tone knob, which determines the alpha factor. 
 
 
 **Tremolo**
 ![Image](Waveforms/Tremolo_Waveforms.png)
-The top signal is the input (dry), and the bottom signals show the output modulated by square and triangle LFO's.
+The top signal is the input (dry), and the bottom signals show the output modulated by square and triangle LFO's. Tremolo works by periodically amplifies and then attenuates only the amplitude of a signal periodically. This is the first and most basic modulation effect. Modulation effects used LFOs which cannot be heard to change a specific variable. In this case we are changing the volume to have a fading in-and-out sound, but when the speed is increased the sound becomes "wobbly" and unstable. There are 2 main shapes of this LFO, square and triangular. Square instantaneously changes the volume making the signal very choppy. Triangular linearly changes the volume, making a more smooth sound. In my effect there is a shape control to mesh the square and triangle LFO to combine the sounds of both.
 
 ## Sources
 
