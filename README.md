@@ -42,6 +42,9 @@ Currently, the repository includes 3 digital audio effects based on real analog 
 - **Tremolo (Boss TR2)**
   - [.wav Version](Effects/Tremolo.cpp)
 
+- **Compressor (Original)**
+  - [.wav Version](Effects/Compression.cpp)
+
 - **Real-Time Effects**
   - [Current Version](Real_Time_Code/effects.cpp)
 ---
@@ -59,6 +62,9 @@ The `Audio Demos` folder contains example outputs for each effect:
 -  [Tremolo Input](Audio_Demos/Overdrive_Input.mp3)
 -  [Squared Tremolo Output](Audio_Demos/Overdrive_Square_Ouput.mp3)
 -  [Triangular Tremolo Input](Audio_Demos/Overdrive_Triangle_Output.mp3)
+
+-  [Compression Input](Audio_Demos/Compression_Input.wav)
+-  [Compression Output](Audio_Demos/Compression_output.wav)
 
 
 ---
