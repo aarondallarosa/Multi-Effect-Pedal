@@ -80,6 +80,11 @@ applies a non-linear clipping using the hyperbolic tangent function. (tanh) This
 ![Image](Waveforms/Tremolo_Waveforms.png)
 The top signal is the input (dry), and the bottom signals show the output modulated by square and triangle LFO's. Tremolo works by periodically amplifies and then attenuates only the amplitude of a signal periodically. This is the first and most basic modulation effect. Modulation effects used LFOs which cannot be heard to change a specific variable. In this case we are changing the volume to have a fading in-and-out sound, but when the speed is increased the sound becomes "wobbly" and unstable. There are 2 main shapes of this LFO, square and triangular. Square instantaneously changes the volume making the signal very choppy. Triangular linearly changes the volume, making a more smooth sound. In my effect there is a shape control to mesh the square and triangle LFO to combine the sounds of both.
 
+
+**Compression**
+![Image](Waveforms/Compression_Waveform.png)
+Compression is a very subtle effect and is used as a polish on instruments to contain the dynamics. In the waveform you can see how the envelope of the wet signal is smushed together and more constricted. This effect works by having a dB threshold that activates a gain reduction to the signal if it too loud. This is considered downward compression, and actually even though it seems like the quite signals are getting compressed they are not. In many industry standard instrument effects the entire signal is boosted and compressed so the quiet notes are pushed better into the mix while restricting the loud notes. The attack control eliminates the instantaneous transition between the compressor being on or off. Whenever the dB threshold is passed, the gain reduction multiplier is gradually increased to have a smoother feel when playing loudly to allow for the instantaneous notes to stand out and in the transient stage the compressor grows stronger.  The opposite of this control is release which reduces the amount of gain reduction as the signal goes back into the threshold.
+
 ## Sources
 
 _Relevant sources, references, and inspirations will be listed here:_
